@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="source/css/style.css">
+    <title>CodeBase</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-logo">
+            <div class="logo-icon">CD</div>
+            <span>CODEBASE</span>
+        </div>
+        <div class="header-actions">
+            <a href="https://github.com/joaobrittodev/citycode" target="_blank" class="btn-github">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-home">
+        <div class="suggestions-section">
+            <!-- HERO SECTION -->
+            <div class="hero">
+                <h1 class="title-main">CodeBase</h1>
+                <p class="subtitle">Tudo sobre a cidade que você deseja conhecer.</p>
+            </div>
+
+            <!-- FILTER AND SEARCH BAR -->
+            <div class="search-wrapper">
+                <!-- SELECT UF -->
+                <div class="uf-filter">
+                    <label for="ufSelect" class="uf-label">Estado (UF):</label>
+                    <select id="ufSelect" class="uf-select">
+                        <option value="">Todos os Estados</option>
+                        <option value="AC">Acre (AC)</option>
+                        <option value="AL">Alagoas (AL)</option>
+                        <option value="AP">Amapá (AP)</option>
+                        <option value="AM">Amazonas (AM)</option>
+                        <option value="BA">Bahia (BA)</option>
+                        <option value="CE">Ceará (CE)</option>
+                        <option value="DF">Distrito Federal (DF)</option>
+                        <option value="ES">Espírito Santo (ES)</option>
+                        <option value="GO">Goiás (GO)</option>
+                        <option value="MA">Maranhão (MA)</option>
+                        <option value="MT">Mato Grosso (MT)</option>
+                        <option value="MS">Mato Grosso do Sul (MS)</option>
+                        <option value="MG">Minas Gerais (MG)</option>
+                        <option value="PA">Pará (PA)</option>
+                        <option value="PB">Paraíba (PB)</option>
+                        <option value="PR">Paraná (PR)</option>
+                        <option value="PE">Pernambuco (PE)</option>
+                        <option value="PI">Piauí (PI)</option>
+                        <option value="RJ">Rio de Janeiro (RJ)</option>
+                        <option value="RN">Rio Grande do Norte (RN)</option>
+                        <option value="RS">Rio Grande do Sul (RS)</option>
+                        <option value="RO">Rondônia (RO)</option>
+                        <option value="RR">Roraima (RR)</option>
+                        <option value="SC">Santa Catarina (SC)</option>
+                        <option value="SP">São Paulo (SP)</option>
+                        <option value="SE">Sergipe (SE)</option>
+                        <option value="TO">Tocantins (TO)</option>
+                    </select>
+                </div>
+
+                <!-- SEARCH BAR -->
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="search-input" 
+                        placeholder="Ask anything, find anything..."
+                    >
+                    <button id="searchButton" class="search-btn" type="button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RESULTS SECTION (Hidden by default) -->
+    <div id="resultsContainer" class="results-section" style="display: none;">
+        <div class="results-top">
+            <button id="backButton" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Search
+            </button>
+            <h2 id="resultCount" class="results-title"></h2>
+        </div>
+
+        <div class="table-container">
+            <table id="resultsTable" class="results-table">
+                <thead>
+                    <tr>
+                        <th>UF</th>
+                        <th>Sigla</th>
+                        <th>Localidade</th>
+                        <th>Município</th>
+                        <th>DDD</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTableBody">
+                    <!-- Results will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="source/js/main.js"></script>
+</body>
+
+</html>
