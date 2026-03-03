@@ -33,7 +33,7 @@ async function performSearch() {
   const uf = ufSelect.value.trim();
   
   if (!busca) {
-    console.warn("Digite algo para pesquisar");
+    document.getElementById('searchInput').placeholder = "Digite algo para buscar...";
     return;
   }
 
@@ -145,7 +145,3 @@ function escapeHtml(text) {
   return text.replace(/[&<>"']/g, m => map[m]);
 }
 
-// Inicialização
-window.addEventListener('load', () => {
-  console.log('Página carregada - Sistema de busca pronto com filtro de UF');
-});
