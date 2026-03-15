@@ -1,2 +1,5 @@
 /source/php
 .env
+composer.lock
+composer.json
+vendor/
