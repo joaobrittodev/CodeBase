@@ -1,7 +1,7 @@
 # CityCode
 
 [![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)](https://github.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/license/mit)
 [![Language: JavaScript](https://img.shields.io/badge/Language-JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=white)]()
 
 Aplicação web simples para consulta de informações de cidades brasileiras (UF, sigla, localidade, município e DDD). Ideal para estudos, integrações leves ou uso em projetos front-end que precisem de uma API local de consulta geográfica.
