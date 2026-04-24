@@ -8,15 +8,15 @@ Aplicação web simples para consulta de informações de cidades brasileiras (U
 
 ## Recursos
 - Busca por nome de localidade ou DDD.
-- Filtro por Unidade Federativa (UF).
+- Filtro por Estado (UF).
 - Resultados exibidos em tabela responsiva.
 - Tratamento de erros no front-end e escape de HTML para segurança.
 - Endpoint PHP simples para retorno de dados (pode ser adaptado para outras fontes).
 
 ## Tecnologias
 - HTML, CSS, JavaScript (front-end)
-- PHP (endpoints)
-- MySQL (exemplo de banco de dados)
+- PHP & JS (back-end)
+- MySQL 
 
 ## Estrutura do projeto
 - index.html — Interface principal.
